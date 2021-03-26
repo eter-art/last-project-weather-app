@@ -68,7 +68,7 @@ for  (let index = 0; index < 6; index++) {
  let apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get (apiUrl) .then(displayWeatherCondition);
 
-apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&&appid=${apiKey}&units=metric`;
+apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&&appid=${apiKey}&units=metric`;
 axios.get (apiUrl).then (displayForecast);
 
 
